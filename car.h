@@ -28,6 +28,7 @@ public:
 	}
 	car(const car &car);
 	void car_copy(car car2);
+	car Get_car();
 	void del();
 	~car();
 };

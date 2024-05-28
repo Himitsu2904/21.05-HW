@@ -140,11 +140,6 @@ student student::Get_stud()
 	stud.telephone = new char[strlen(telephone) + 1];
 	strcpy(stud.telephone, telephone);
 	stud.grade = grade;
-
-	/*stud.Set_FIO(FIO);
-	stud.Set_birthday(birthday);
-	stud.Set_telephone(telephone);
-	stud.Set_grade(grade);*/
 	return stud;
 }
 

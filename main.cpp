@@ -14,15 +14,14 @@ int main()
 	cout << "\t\tStudent 1:" << endl;
 	stud1.show();
 	student stud2 = stud1;
+	//student stud2(stud1); //альтернативный способ побитового копирования
 	cout <<endl <<endl << "\t\tStudent 2:" << endl;
 	stud2.show();
 	student stud3;
 	stud3.stud_copy(stud2);
 	cout << endl << endl << "\t\tStudent 3:" << endl;
 	stud3.show();
-	student stud4;
-	//stud4 = stud3.Get_stud();
-	//stud4 = Get_stud2(stud3);
+	student stud4 = stud3.Get_stud();
 	cout << endl << endl << "\t\tStudent 4:" << endl;
 	stud4.show();
 	cout << endl << "------------------------------------------------------------" << endl;
@@ -31,6 +30,7 @@ int main()
 	car1.show();
 	cout << endl << endl;
 	car car2 = car1;
+	//car car2(car1); //альтернативный способ побитового копирования
 	cout << "\t\t Car 2:" << endl;
 	car2.show();
 	cout << endl << endl;
@@ -39,7 +39,10 @@ int main()
 	cout << "\t\t Car 3:" << endl;
 	car3.show();
 	cout << endl << endl;
-
+	car car4 = car3.Get_car();
+	cout << "\t\t Car 4:" << endl;
+	car4.show();
 	cout << endl;
 	stud1.del();
+	car1.del();
 }

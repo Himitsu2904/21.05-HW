@@ -66,6 +66,16 @@ void car::car_copy(car car2)
 	year = car2.year;
 }
 
+car car::Get_car()
+{
+	car c;
+	c.model = new char[strlen(model) + 1];
+	strcpy(c.model, model);
+	c.price = price;
+	c.year = year;
+	return c;
+}
+
 void car::del()
 {
 	if (shop != nullptr)
